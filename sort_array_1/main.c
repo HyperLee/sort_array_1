@@ -39,7 +39,6 @@ void PrintArray (int nSize, int A[])
     printf("\n");
     for (int i = 0 ; i< nSize ; i++)
     {
-        //cout <<A[i]<<" " ;
         printf("%d", A[i]);
     }
     printf("\n");
@@ -51,11 +50,10 @@ int main(int argc, const char * argv[]) {
 
     int nSize  = sizeof (A) /sizeof (A[0]) ;
     
-    printf("Before:");
+    printf("Before: ");
     PrintArray(nSize,A) ;
-    //printf("\n");
     BubbleSort(nSize,A) ;
-    printf("After :");
+    printf("After: ");
     PrintArray(nSize,A);
     
     return 0;
