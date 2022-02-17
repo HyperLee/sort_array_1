@@ -10,9 +10,10 @@
 #include <stdlib.h>
 void PrintArray (int nSize, int A[]);
 
+
 void BubbleSort(int nsize, int a[])
 {
-    int i , j , t ;
+    int i, j, t ;
 
     for (i = 1 ; i< nsize; i++)
     {
@@ -20,9 +21,9 @@ void BubbleSort(int nsize, int a[])
         {
             if (a[j] > a[j+1])
             {
-                t        = a[j] ;
-                a[j]    = a[j+1] ;
-                a[j+1]    = t;
+                t = a[j] ;
+                a[j] = a[j+1] ;
+                a[j+1] = t;
 
                 //print
                 //PrintArray(nsize , a) ;
@@ -43,6 +44,7 @@ void PrintArray (int nSize, int A[])
     }
     printf("\n");
 }
+
 
 int main(int argc, const char * argv[]) {
 
